@@ -1,4 +1,4 @@
-package com.kennethmanuel.myapplication
+package com.kennethmanuel.AdvWeek4
 
 import org.junit.Test
 

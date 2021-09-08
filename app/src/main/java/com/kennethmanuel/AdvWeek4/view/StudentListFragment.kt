@@ -1,4 +1,4 @@
-package com.kennethmanuel.myapplication.view
+package com.kennethmanuel.AdvWeek4.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.kennethmanuel.myapplication.R
-import com.kennethmanuel.myapplication.viewmodel.ListViewModel
+import com.kennethmanuel.AdvWeek4.R
+import com.kennethmanuel.AdvWeek4.viewmodel.ListViewModel
 import kotlinx.android.synthetic.main.fragment_student_list.*
 
 class StudentListFragment : Fragment() {

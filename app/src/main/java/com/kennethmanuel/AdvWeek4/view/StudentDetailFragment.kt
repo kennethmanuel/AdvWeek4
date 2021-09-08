@@ -1,4 +1,4 @@
-package com.kennethmanuel.myapplication.view
+package com.kennethmanuel.AdvWeek4.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,10 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.kennethmanuel.myapplication.R
-import com.kennethmanuel.myapplication.viewmodel.DetailListStudent
+import com.kennethmanuel.AdvWeek4.R
+import com.kennethmanuel.AdvWeek4.viewmodel.DetailListStudent
 import kotlinx.android.synthetic.main.fragment_student_detail.*
-import kotlinx.android.synthetic.main.student_list_item.*
 
 class StudentDetailFragment : Fragment() {
     private lateinit var viewModel: DetailListStudent

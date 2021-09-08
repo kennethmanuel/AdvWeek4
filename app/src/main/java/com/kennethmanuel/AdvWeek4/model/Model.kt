@@ -1,4 +1,4 @@
-package com.kennethmanuel.myapplication.model
+package com.kennethmanuel.AdvWeek4.model
 
 data class Student(
     val id:String?,

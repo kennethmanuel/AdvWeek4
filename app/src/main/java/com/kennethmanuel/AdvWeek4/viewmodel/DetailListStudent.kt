@@ -1,8 +1,8 @@
-package com.kennethmanuel.myapplication.viewmodel
+package com.kennethmanuel.AdvWeek4.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.kennethmanuel.myapplication.model.Student
+import com.kennethmanuel.AdvWeek4.model.Student
 
 class DetailListStudent: ViewModel() {
     val studentLD = MutableLiveData<Student>()

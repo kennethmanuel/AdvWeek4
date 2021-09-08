@@ -1,11 +1,11 @@
-package com.kennethmanuel.myapplication.view
+package com.kennethmanuel.AdvWeek4.view
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
-import com.kennethmanuel.myapplication.R
-import com.kennethmanuel.myapplication.model.Student
+import com.kennethmanuel.AdvWeek4.R
+import com.kennethmanuel.AdvWeek4.model.Student
 import kotlinx.android.synthetic.main.student_list_item.view.*
 
 class StudentListAdapter(val studentList:ArrayList<Student>)

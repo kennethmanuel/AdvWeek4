@@ -10,7 +10,7 @@ android {
     apply plugin: "androidx.navigation.safeargs.kotlin"
 
     defaultConfig {
-        applicationId "com.kennethmanuel.myapplication"
+        applicationId "com.kennethmanuel.AdvWeek4"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1

@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/studentDetailFragment"
-        android:name="com.kennethmanuel.myapplication.view.StudentDetailFragment"
+        android:name="com.kennethmanuel.AdvWeek4.view.StudentDetailFragment"
         android:label="fragment_student_detail"
         tools:layout="@layout/fragment_student_detail" />
     <fragment
         android:id="@+id/studentListFragment"
-        android:name="com.kennethmanuel.myapplication.view.StudentListFragment"
+        android:name="com.kennethmanuel.AdvWeek4.view.StudentListFragment"
         android:label="fragment_student_list"
         tools:layout="@layout/fragment_student_list" >
         <action
