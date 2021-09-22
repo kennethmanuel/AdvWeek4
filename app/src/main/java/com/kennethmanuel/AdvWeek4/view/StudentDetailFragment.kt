@@ -8,11 +8,13 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.kennethmanuel.AdvWeek4.R
-import com.kennethmanuel.AdvWeek4.viewmodel.DetailListStudent
+import com.kennethmanuel.AdvWeek4.util.loadImage
+import com.kennethmanuel.AdvWeek4.viewmodel.DetailListModel
 import kotlinx.android.synthetic.main.fragment_student_detail.*
+import kotlinx.android.synthetic.main.student_list_item.*
 
 class StudentDetailFragment : Fragment() {
-    private lateinit var viewModel: DetailListStudent
+    private lateinit var viewModel: DetailListModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,20 +25,19 @@ class StudentDetailFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        viewModel = ViewModelProvider(this).get(DetailListStudent::class.java)
-        viewModel.fetch()
-
-        val v = viewModel.studentLD.value
-        txtId.setText(v?.id)
-        txtName.setText(v?.name)
-        txtBod.setText(v?.bod)
-        txtPhone.setText(v?.phone)
-
+        super.onViewCreated(view, savedInstanceState)
+        val id = StudentDetailFragmentArgs.fromBundle(requireArguments()).id
+        viewModel = ViewModelProvider(this).get(DetailListModel::class.java)
+        viewModel.fetch(id.toString())
         observeViewModel()
     }
     fun observeViewModel() {
         viewModel.studentLD.observe(viewLifecycleOwner, Observer {
-
+            txtId.setText(it.id)
+            txtNameCard.setText(it.name)
+            txtBod.setText(it.bod)
+            txtPhone.setText(it.phone)
+            imageView2.loadImage(viewModel.studentLD.value?.photoUrl.toString(), progressBar3)
         })
     }
 }
